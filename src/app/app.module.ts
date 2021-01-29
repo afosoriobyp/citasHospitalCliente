@@ -10,6 +10,8 @@ import { ComponentsModule } from './components/components.module';
 import { AngularMaterialModule } from './angular-material.module';
 import { AgmCoreModule } from '@agm/core';
 
+import { AuthModule } from './auth/auth.module';
+
 import { AppComponent } from './app.component';
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -21,9 +23,7 @@ import { MapsComponent } from './pages/maps/maps.component';
 import { NotificationsComponent } from './pages/notifications/notifications.component';
 import { UpgradeComponent } from './pages/upgrade/upgrade.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
-import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { ProgressComponent } from './pages/progress/progress.component';
 import { Grafica1Component } from './pages/grafica1/grafica1.component';
 
@@ -37,6 +37,7 @@ import { Grafica1Component } from './pages/grafica1/grafica1.component';
     RouterModule,
     AppRoutingModule,
     AngularMaterialModule,
+    AuthModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     })
@@ -44,8 +45,6 @@ import { Grafica1Component } from './pages/grafica1/grafica1.component';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    LoginComponent,
-    RegisterComponent,
     NopagefoundComponent,
     ProgressComponent,
     Grafica1Component,

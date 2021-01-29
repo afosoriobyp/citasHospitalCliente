@@ -4,9 +4,8 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
-import { RegisterComponent } from './auth/register/register.component';
-import { LoginComponent } from './auth/login/login.component';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
+import { AuthRoutingModule } from './auth/auth.routing';
 
 const routes: Routes =[
   {
@@ -22,8 +21,7 @@ const routes: Routes =[
       loadChildren: './layouts/admin-layout/admin-layout.module#AdminLayoutModule'
     }]
   },
-  { path: 'register', component: RegisterComponent },
-  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: '**', component: NopagefoundComponent },
 ];
 
@@ -31,6 +29,7 @@ const routes: Routes =[
   imports: [
     CommonModule,
     BrowserModule,
+    AuthRoutingModule,
     RouterModule.forRoot(routes,{
        useHash: true
     })

@@ -13,7 +13,7 @@ import { Grafica1Component } from 'app/pages/grafica1/grafica1.component';
 import { RegisterComponent } from 'app/auth/register/register.component';
 import { LoginComponent } from 'app/auth/login/login.component';
 import { AdminLayoutComponent } from './admin-layout.component';
-import { NopagefoundComponent } from 'app/pages/nopagefound/nopagefound.component';
+import { NopagefoundComponent } from 'app/nopagefound/nopagefound.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -90,6 +90,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
-    { path: '', redirectTo:'/dashboard', pathMatch: 'full' },
        
 ];
