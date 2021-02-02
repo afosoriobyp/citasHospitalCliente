@@ -4,14 +4,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
+import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { AngularMaterialModule } from './angular-material.module';
 import { AgmCoreModule } from '@agm/core';
-
 import { AuthModule } from './auth/auth.module';
-
 import { AppComponent } from './app.component';
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -35,6 +34,7 @@ import { Grafica1Component } from './pages/grafica1/grafica1.component';
     HttpClientModule,
     ComponentsModule,
     RouterModule,
+    ChartsModule,
     AppRoutingModule,
     AngularMaterialModule,
     AuthModule,
