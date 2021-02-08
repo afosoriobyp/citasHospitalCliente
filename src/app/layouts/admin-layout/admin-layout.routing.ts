@@ -10,6 +10,7 @@ import { NotificationsComponent } from '../../pages/notifications/notifications.
 import { UpgradeComponent } from '../../pages/upgrade/upgrade.component';
 import { ProgressComponent } from 'app/pages/progress/progress.component';
 import { Grafica1Component } from 'app/pages/grafica1/grafica1.component';
+import { PromesasComponent } from 'app/pages/promesas/promesas.component';
 import { RegisterComponent } from 'app/auth/register/register.component';
 import { LoginComponent } from 'app/auth/login/login.component';
 import { AdminLayoutComponent } from './admin-layout.component';
@@ -83,6 +84,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
     { path: 'progress',       component: ProgressComponent },
     { path: 'grafica1',       component: Grafica1Component },
+    { path: 'promesas',       component: PromesasComponent },
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
     { path: 'typography',     component: TypographyComponent },
